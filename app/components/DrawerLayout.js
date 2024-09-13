@@ -57,10 +57,6 @@ export default class DrawerLayout extends React.Component {
             this.get_rating(this.state.info['id'])
     }
 
-    async logout() {
-        await AsyncStorage.clear();
-        Actions.reset("initial")
-    }
 
     share() {
         Share.share({
