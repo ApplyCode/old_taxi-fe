@@ -124,9 +124,7 @@ export default class DrawerLayout extends React.Component {
                                     <Image source={require("../assets/images/logo.jpg")} style={{width: 100, height: 100}} resizeMode={"contain"} />    
                                 }
                                 
-                                <Text style={{fontWeight: 'bold', fontSize: 16}}>{this.state.info.car_color}</Text>
-                                <Text style={{fontWeight: 'bold', fontSize: 16}}>{this.state.info.kind}</Text>
-                                <Text style={{fontWeight: 'bold', fontSize: 16}}>{this.state.info.plate_no}</Text>
+
                             </View>
                         </View>
                         :
