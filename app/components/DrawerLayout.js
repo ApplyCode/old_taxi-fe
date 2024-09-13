@@ -1,12 +1,4 @@
-import AsyncStorage from '@react-native-community/async-storage';
-import React from 'react';
-import { StyleSheet, Text, TouchableOpacity, View, Image, Alert, Platform, SafeAreaView, Switch, Share } from 'react-native';
-import { Actions } from 'react-native-router-flux';
-import { Icon } from 'react-native-elements';
-import { ScrollView } from 'react-native-gesture-handler';
-import StarRating from 'react-native-star-rating';
-import { set_online, get_driver_ratings } from '../constants/Api';
-import { showToast } from '../constants/Global';
+
 export default class DrawerLayout extends React.Component {
     constructor(props) {
         super(props);
