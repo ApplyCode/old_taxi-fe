@@ -9,7 +9,17 @@ import { set_online, get_driver_ratings } from '../constants/Api';
 import { showToast } from '../constants/Global';
 export default class DrawerLayout extends React.Component {
 
-
+    constructor(props) {
+        super(props);
+        this.state = {
+            noticeNotify: false,
+            info: null,
+            is_online: true,
+            vote_count: 0,
+            rating: 0
+        };
+        
+    }
     async componentDidMount(){
         
         let info = await AsyncStorage.getItem("user_info")
