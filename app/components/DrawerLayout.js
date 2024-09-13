@@ -20,19 +20,7 @@ export default class DrawerLayout extends React.Component {
         };
         
     }
-    async componentDidMount(){
-        
-        let info = await AsyncStorage.getItem("user_info")
-        if(info) {
-            info = JSON.parse(info)
-            this.setState({info})
-            this.get_rating(info['id'])
-            if(info['is_online'] == 1 || info['is_online'] == 3)
-                this.setState({is_online: true})
-            else
-                this.setState({is_online: false})
-        }
-    }
+
 
     async get_rating(id) {
         if( id !== 1) {
