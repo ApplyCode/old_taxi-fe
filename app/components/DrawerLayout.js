@@ -149,7 +149,12 @@ export default class DrawerLayout extends React.Component {
                                                 style={{ transform: [{ scaleX: 1.5 }, { scaleY: 1.5 }] }}
                                                 value={this.state.is_online}
                                             />
-
+                                            {
+                                                this.state.is_online ?
+                                                <Text style={{marginLeft: 10, fontSize: 18}}>Online</Text>
+                                                :
+                                                <Text style={{marginLeft: 10, fontSize: 18}}>Offline</Text>
+                                            }
                                         </View>
                                         :
                                         null
