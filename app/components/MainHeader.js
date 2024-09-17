@@ -1,7 +1,4 @@
-import React, { Component } from 'react';
-import { Platform, TextInput, View, Image, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
-import {Actions} from 'react-native-router-flux';
-import { Icon } from 'react-native-elements';
+
 export default class MainHeader extends Component {
   constructor(props) {
     super(props);
