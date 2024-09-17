@@ -1,4 +1,4 @@
-
+import React, { Component } from 'react';
 import { Platform, TextInput, View, Image, Text, StyleSheet, ScrollView, TouchableOpacity } from 'react-native';
 import {Actions} from 'react-native-router-flux';
 import AsyncStorage from '@react-native-community/async-storage';
