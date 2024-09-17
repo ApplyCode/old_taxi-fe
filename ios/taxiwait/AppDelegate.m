@@ -22,7 +22,7 @@ static void InitializeFlipper(UIApplication *application) {
   [client start];
 }
 #endif
-
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
