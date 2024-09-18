@@ -62,7 +62,17 @@ export default class Admin extends React.Component {
         
     }
 
-
+    async remove(driver_id) {
+        this.setState({loaded: false})
+        await remove_driver(driver_id)
+        .then(async (response) => {
+            this.refresh();
+        })
+        .catch((error) => {
+            this.setState({loaded: true});
+            showToast();
+        });
+    }
 
     async setOnOff(driver_id, on_off) {
         this.setState({loaded: false})
