@@ -87,7 +87,9 @@ export default class Admin extends React.Component {
         });
     }
 
-
+    editDriver(driver_id) {
+        Actions.push("edit_driver", {driver_id : driver_id})
+    }
 
     renderList() {
         return this.state.list.map((item, index) => {
