@@ -95,12 +95,7 @@ export default class Admin extends React.Component {
         return this.state.list.map((item, index) => {
             let country = item.country
             let countryName = '';
-            if(Layout.Country_City && Layout.Country_City.length > 0) {
-                Layout.Country_City.map((item, index) => {
-                    if(country == item.value)
-                        countryName = item.label
-                })
-            }
+
             return <View key={index} style={styles.section}>
                 <View style={{width: '100%', flexDirection: 'row'}}>
                     {
