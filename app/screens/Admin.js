@@ -25,9 +25,6 @@ export default class Admin extends React.Component {
         this.refresh()
     }
 
-    UNSAFE_componentWillReceiveProps() {
-        this.refresh();
-    }
 
     async refresh() {
         let info = await AsyncStorage.getItem("user_info")
