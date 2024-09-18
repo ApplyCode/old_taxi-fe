@@ -46,21 +46,7 @@ export default class Admin extends React.Component {
         });
     }
 
-    async removeDriver(driver_id) {
-        Alert.alert(
-            "Remove",
-            "Do you want to remove driver?",
-            [
-              {
-                text: "Cancel",
-                style: "cancel"
-              },
-              { text: "OK", onPress: () => this.remove(driver_id) }
-            ],
-            { cancelable: false }
-        );
-        
-    }
+
 
     async remove(driver_id) {
         this.setState({loaded: false})
