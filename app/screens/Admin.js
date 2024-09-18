@@ -204,7 +204,13 @@ const styles = StyleSheet.create({
             width: 0,
             height: 10,
         },
-
+        shadowOpacity: 0.1,
+        shadowRadius: 3.84,
+        elevation: 5,
+        marginHorizontal: 15,
+        marginVertical: 10,
+        
+        alignItems: 'center'
     },
     label: {
         marginBottom: 5
