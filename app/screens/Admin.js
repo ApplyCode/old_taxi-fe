@@ -24,6 +24,9 @@ export default class Admin extends React.Component {
     async componentDidMount(){
         this.refresh()
     }
+    UNSAFE_componentWillReceiveProps() {
+        this.refresh();
+    }
 
 
     async refresh() {
