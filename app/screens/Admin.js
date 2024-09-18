@@ -93,8 +93,7 @@ export default class Admin extends React.Component {
 
     renderList() {
         return this.state.list.map((item, index) => {
-            let country = item.country
-            let countryName = '';
+
             if(Layout.Country_City && Layout.Country_City.length > 0) {
                 Layout.Country_City.map((item, index) => {
                     if(country == item.value)
