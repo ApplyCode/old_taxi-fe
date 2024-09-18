@@ -1,7 +1,4 @@
-import { Icon } from 'react-native-elements';
-import * as React from 'react';
-import { StyleSheet , View , Text, Platform, TouchableOpacity } from 'react-native';
-import { Actions } from 'react-native-router-flux';
+
 export default function TabBarIcon(props) {
   
     return (
