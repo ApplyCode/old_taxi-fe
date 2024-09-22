@@ -4,7 +4,11 @@ import {Actions} from 'react-native-router-flux';
 import { Icon } from 'react-native-elements';
 export default class MainHeader extends Component {
 
-
+  constructor(props) {
+    super(props);
+    this.state = { 
+    };
+  }
   render() {
     return (
       <View style={styles.header}>
