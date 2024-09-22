@@ -28,7 +28,12 @@ export default class MainHeader extends Component {
             </View>
         }
         
-
+        {
+          this.props.isOnline ?
+          <Text style={{color: 'black', paddingLeft: 10, fontSize: 16, paddingRight: 20}}>Online</Text>
+          :
+          null
+        }
       </View>
     )
   }
