@@ -13,7 +13,7 @@ export default function TabBarIcon(props) {
           style={{ marginBottom: 0, marginTop: 8 }}
           color={props.focused ? '#2C88D9' : '#4B5C6B'}
         />
-        <Text style={{color: props.focused ? '#2C88D9' : '#4B5C6B' , marginTop: 4}}>{props.title}</Text>
+
       </TouchableOpacity>
     );
   
