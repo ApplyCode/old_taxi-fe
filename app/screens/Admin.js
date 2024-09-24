@@ -4,9 +4,7 @@ import { showToast } from '../constants/Global';
 import Spinner_bar from 'react-native-loading-spinner-overlay';
 import Header from '../components/Header';
 import { get_driver_list_admin, remove_driver, setOnOff } from '../constants/Api';
-import Layout from '../constants/Layout';
-import AsyncStorage from '@react-native-community/async-storage';
-import { Actions } from 'react-native-router-flux';
+
 export default class Admin extends React.Component {
     constructor(props){
         super(props);
