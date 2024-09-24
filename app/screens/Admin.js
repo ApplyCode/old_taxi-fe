@@ -1,5 +1,4 @@
-import React from 'react';
-import { StyleSheet, Text, Switch, View, Image, Alert, Platform, ScrollView, TextInput, TouchableOpacity } from 'react-native';
+
 import { showToast } from '../constants/Global';
 import Spinner_bar from 'react-native-loading-spinner-overlay';
 import Header from '../components/Header';
