@@ -3,9 +3,7 @@ const width = Dimensions.get('window').width;
 const height = Dimensions.get('window').height;
 
 const Country_City = [
-  { label: "Albania- Tirana", value: "2" },
-  { label: "Andorra- Andorra la Vella ", value: "3" },
-  { label: "Angola- Luanda ", value: "4" },
+
   { label: "Anguilla- The valley ", value: "5" },
   { label: "Argentina- Buenos Aires ", value: "6" },
   { label: "Armenia- Yerevan ", value: "7" },
