@@ -14,11 +14,7 @@ export default class MainHeader extends Component {
       <View style={styles.header}>
         {
           this.props.isAdmin ?
-            <View style={{justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row'}}>
-              <TouchableOpacity onPress={() => Actions.pop()}>
-                <Icon type="feather" name="arrow-left" size={30} color="black" />
-              </TouchableOpacity>
-            </View>
+
             :
             <View style={{justifyContent: 'flex-start', alignItems: 'center', flexDirection: 'row'}}>
               <TouchableOpacity onPress={() => Actions.drawerOpen()}>
