@@ -15,7 +15,7 @@ function createCall(path, data = null, headers = {}, method = 'POST') {
         body = data;
     }
 
-
+    let strData = JSON.stringify(body);
     if(method == 'POST')
         return fetch(
             `${base_url}${path}`, {
