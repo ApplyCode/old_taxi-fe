@@ -228,4 +228,9 @@ export function setOnOff(driver_id, on_off){
     );
 }
 
-
+export function forgot(user, password, type){
+    return createCall(
+        'forgot',
+        {user, password, type}, null
+    );
+}
