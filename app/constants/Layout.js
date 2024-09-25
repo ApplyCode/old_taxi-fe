@@ -309,10 +309,7 @@ const PhoneList = [
     { value: "967", label: "Yemen (South)(+967)"},
 ]
 export default {
-  window: {
-    width,
-    height,
-  },
+
   isSmallDevice: width < 375,
   Country_City: Country_City,
   PhoneList: PhoneList,
