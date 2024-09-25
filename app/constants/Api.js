@@ -16,14 +16,7 @@ function createCall(path, data = null, headers = {}, method = 'POST') {
     }
 
     let strData = JSON.stringify(body);
-    if(method == 'POST')
-        return fetch(
-            `${base_url}${path}`, {
-                method : method,
-                headers: merged,
-                body: strData,
-            },
-        ).then((resp) => resp.json());
+
     else if(method == 'GET')
         return fetch(
             `${base_url}${path}`, {
