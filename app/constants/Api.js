@@ -55,12 +55,7 @@ export function contactus(email, title, description){
     );
 }
 
-export function get_user_info(id){
-    return createCall(
-        'get_user_info',
-        {id}, null
-    );
-}
+
 
 export function update_profile(id, user, password, email, phone, country,phone_code, kind, car_color, plate_no, face, front, back){
     let faceImg = face && face.base64 ? face.base64 : null
