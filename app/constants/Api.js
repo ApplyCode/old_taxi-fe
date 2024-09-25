@@ -5,10 +5,7 @@ let _headers = {
     'Content-Type': 'application/json',
 };
 function createCall(path, data = null, headers = {}, method = 'POST') {
-    const merged = {
-        ..._headers,
-        ...headers,
-    };
+
 
     let body = {};
     if (data) {
