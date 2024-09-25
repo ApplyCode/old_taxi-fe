@@ -8,7 +8,9 @@ import { TextInput } from 'react-native-gesture-handler';
 import { Icon } from 'react-native-elements';
 import moment from 'moment';
 import firebase from '../../Fire'
-
+import Layout  from '../constants/Layout'
+import { send_chat } from '../constants/Api';
+export const chatsRef = firebase.database().ref()
 
 let chat = null
 export default class Chat extends React.Component {
