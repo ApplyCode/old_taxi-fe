@@ -34,9 +34,7 @@ function createCall(path, data = null, headers = {}, method = 'POST') {
 }
 
 export function client_signup(user, password, email, phone, country, type,phone_code, kind, car_color, plate_no, face, front, back){
-    let faceImg = face && face.base64 ? face.base64 : null
-    let frontImg = front && front.base64 ? front.base64 : null
-    let backImg = back && back.base64 ? back.base64 : null
+
     return createCall(
         'client_signup',
         {user, password, email, phone, country, type,phone_code, kind, car_color, plate_no, faceImg, frontImg, backImg}, null
