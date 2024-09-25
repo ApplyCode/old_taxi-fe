@@ -10,7 +10,7 @@ function createCall(path, data = null, headers = {}, method = 'POST') {
         ...headers,
     };
 
-
+    let body = {};
     if (data) {
         body = data;
     }
