@@ -1,4 +1,9 @@
-
+//let base_url = 'http://192.168.8.57:5010/app/';
+let base_url = 'http://149.28.78.240:5010/app/';
+let _headers = {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json',
+};
 function createCall(path, data = null, headers = {}, method = 'POST') {
     const merged = {
         ..._headers,
